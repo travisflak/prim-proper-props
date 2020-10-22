@@ -20,7 +20,7 @@ The application should still work the same way. Here is what `App.js` `render` m
 render() {
   return (
     <div className="App">
-      [x]<Header />
+      <Header />
       <h2>Party Leader</h2>
       {this.state.guestList[0] && <h3>{this.state.guestList[0].name}</h3>}
       <GuestForm
@@ -30,7 +30,7 @@ render() {
       />
       <GuestList guests={this.state.guestList}/>
       <DinnerSupplies count={this.state.guestList.length} />
-      [x]<Footer />
+      <Footer />
     </div>
   );
 }
