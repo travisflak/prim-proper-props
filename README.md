@@ -9,8 +9,8 @@ This application is fully functional! But `App.js` is getting really crowded. It
 Create the new components in the following order (increasing level of difficulty):
 
 [x] 1. Header
-[] 1. Footer
-[] 1. Guest List
+[x] 1. Footer
+[x] 1. Guest List
 [] 1. Dinner Supplies
 [] 1. Guest Form
 
@@ -20,7 +20,7 @@ The application should still work the same way. Here is what `App.js` `render` m
 render() {
   return (
     <div className="App">
-      <Header />
+      [x]<Header />
       <h2>Party Leader</h2>
       {this.state.guestList[0] && <h3>{this.state.guestList[0].name}</h3>}
       <GuestForm
@@ -30,7 +30,7 @@ render() {
       />
       <GuestList guests={this.state.guestList}/>
       <DinnerSupplies count={this.state.guestList.length} />
-      <Footer />
+      [x]<Footer />
     </div>
   );
 }
